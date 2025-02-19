@@ -1,0 +1,230 @@
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../src/bgPhoto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(51, 84, 112);
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav_links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.register_btn{
+    background: rgb(78, 77, 77);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 1.2rem;
+}
+
+.container{
+    padding: 0 7%;
+}
+
+.headline{
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.search_bar{
+    background-color: rgba(252, 251, 250, 0.685);
+    margin: 30px auto;
+    width: 70%;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.form_style{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form_style input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.form_style button{
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+/* when add images this style will be applied */
+/* .form_style button image{
+    width: 15px;
+    margin-top: 7px;
+/* } */     
+
+.location_input{
+    flex: 1;
+}
+
+.search_bar label{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* %%%%% Exclisives %%%%%%% */
+
+
+.subTitle{
+    font-size: 2.2vw;
+    font-weight: 500;
+    margin: 50px 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+}
+
+.exclusives div{
+    position: relative;
+}
+
+.exclusives div span{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transition: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* ----------- Trending Places ----------- */
+
+.trending_places{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending_places div img{
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+}
+
+.trending_places h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+} 
+
+/* ----------- cta btn ---------- */
+
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(../src/ctaImg.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 5%;
+    color: white;
+}
+
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.5vw;
+    font-weight: 600;
+}
+
+.cta p{
+    font-size: 1.2rem;
+    margin: 8px;
+}
+
+.cta_btn{
+    background-color: #ff5361;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* ---------- Travellers Stories ---------- */
+
+.travellers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.travellers div img{
+    width: 100%;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.travellers div{
+    position: relative;
+    text-align: center;
+}
+
+.travellers p{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
